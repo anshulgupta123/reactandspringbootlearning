@@ -1,14 +1,13 @@
 import './App.css';
-import Counter from './Components/counter/Counter';
 import LearningComponent from './Components/learning-example/LearningComponent';
+import CounterButton from './Components/counter/Counter';
+import Counter from './Components/counter/Counter';
+import TodoApp from './Components/todo/TodoApp';
 
 function App() {
   return (
     <div className="App">
-      <PlayingWithPops property1="p1" property2="p2"></PlayingWithPops>
-      <Counter by={1}></Counter>  
-      <Counter by={2}></Counter>   
-      <Counter by={3}></Counter>    
+      <TodoApp></TodoApp>
     </div>
   );
 }

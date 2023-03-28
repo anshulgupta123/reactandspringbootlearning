@@ -1,5 +1,5 @@
 const person = {
-    name:'anshul',
+    name:'anshul', 
     address:{
         city:'muzaffarnagar',
         state:'U.P'
