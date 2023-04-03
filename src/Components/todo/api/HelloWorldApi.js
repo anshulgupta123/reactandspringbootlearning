@@ -1,13 +1,15 @@
 import axios from "axios";
+import { apiClient } from "./ApiClient";
 
-const apiClient= axios.create(
-    {
-        baseURL: 'http://localhost:8080'
-    }
-)
 
-export default function reteriveHelloWorldBean(){
-    return apiClient.get('/hello-world')
+export default function reteriveHelloWorldBean(token){
+    return apiClient.get('/hello-world',{
+        headers:{
+            Authorization:token
+        }
+    })
 
 }
+
+
 

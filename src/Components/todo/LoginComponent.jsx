@@ -20,11 +20,11 @@ export default function LoginComponent() {
         setPassword(event.target.value)
     }
 
-    function handleSubmit() {
+    async function handleSubmit() {
         console.log("hanndle submit")
         console.log(userName)
         console.log(password)
-        if (authContext.login(userName,password)) {
+        if (await authContext.login(userName,password)) {
             console.log("Authenticated")
             navigate(`/welcome/${userName}`)
         }
